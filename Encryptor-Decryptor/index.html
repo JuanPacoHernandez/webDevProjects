@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<!-- Definimos el lenguaje: es-->
+<html lang = es>
+    
+    <head>
+        <!-- Es aconsejable especificar el codigo del texto con el siguiente diccionario:-->
+        <meta charset="UTF-8">
+        <!-- Meta para hacer un diseño responsivo entre los smartphone, además usamos @media query en CSS-->
+        <meta name = "viewport" content="width=device-width">
+        <title>Text Encryptor</title>
+        <link rel = "stylesheet" href = "reset.css"> 
+        <link rel = "stylesheet" href = "style.css">
+
+        <!-- Estas tres lineas definen el tipo de letra "Montserrat" extraída de Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+        
+    </head>
+
+    <body>
+        <header>
+            <!-- Ctrl + SpaceBar muestra donde se encuentran los archivos-->
+            <img id="logo" src="imagenesEncriptador/Vector.png" alt="Logo">
+        </header>
+        <main>
+            <section>
+                <!-- SECCIÓN ENCRIPTADOR -->
+                <div class="input">
+                <textarea id= "input-text" cols="60" rows="10" placeholder="Ingresa el texto a encriptar / desencriptar"></textarea>
+                </div> 
+                <div class="botones">
+                    <button type="button" class="encriptar" onclick="btnEncriptar()">Encrypt</button>
+                    <button type="button" class="desencriptar" onclick="btnDesencriptar()">Decrypt</button>
+                </div>
+            </section>
+            <section>
+                <!-- SECCIÓN MUESTRA RESULTADO -->
+                <div class="result">
+                    <p>Result</p>
+                    <textarea id= "mensaje" cols="60" rows="10" placeholder="Resultado..."></textarea>
+                    <button id="copiar" onclick="copiar()">Copy</button>
+                </div>
+            </section>
+        
+            <section>
+                <ul class="requisitos">
+                    <li>Requirements</li>
+                    <li>- Must be lowercase words</li>
+                    <li>- No special words</li>
+                    <li>- Must allow to encrypt a word as well as to decrypt into the original word.</li>                 
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p class = "credits">Website by J Paco Hdez</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

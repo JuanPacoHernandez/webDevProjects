@@ -1,0 +1,147 @@
+#logo{
+    margin: 20px;
+    left: 83px;
+    top: 223px;
+}
+
+body{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #FFFFFF;
+}
+
+
+#input-text{
+    position: absolute;
+    width: 583px;
+    height: 289px;
+    left: 83px;
+    top: 74px;
+    background: #F1EEEE;
+}
+
+.result p{
+    display: flex;
+    position: absolute;
+    color: #FFFFFF;
+    width: 289px;
+    height: 59px;
+    left: 700px;
+    top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgb(0, 0, 0);
+    filter: drop-shadow(0px 4px 4px rgb(0, 0, 0));
+}
+
+#mensaje{
+    position: absolute;
+    width: 583px;
+    height: 289px;
+    left: 700px;
+    top: 74px;
+    background: #F1EEEE;
+    background-image: url(imagenesEncriptador/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: 125px;
+    background-size: auto;
+}
+
+
+.encriptar{
+    position: absolute;
+    font-size: large;
+    color: white;
+    width: 255px;
+    height: 63px;
+    left: 83px;
+    top: 394px;
+    filter: drop-shadow(0px 4px 4px rgb(0, 0, 0));
+    /* transistion aparecio en CCS3 y sirve para cambiar las propiedades del item pero de una forma no abrupta, como una forma suavizada y "all" significa que cambie TODAS las propiedades*/
+    transition: 0.5s all;
+    /*Cambia el estilo del puntero*/
+    cursor: pointer;
+    text-shadow: 0px 4px 4px rgb(0, 0, 0);
+    background: #1D10AC;
+    border-radius: 10px;
+}
+
+.desencriptar{
+    display: inline;
+    font-size: large;
+    color: white;
+    position: absolute;
+    width: 255px;
+    height: 63px;
+    left: 411px;
+    top: 394px;
+    filter: drop-shadow(0px 4px 4px rgb(0, 0, 0));
+    /* transistion aparecio en CCS3 y sirve para cambiar las propiedades del item pero de una forma no abrupta, como una forma suavizada y "all" significa que cambie TODAS las propiedades*/
+    transition: 0.5s all;
+    /*Cambia el estilo del puntero*/
+    cursor: pointer;
+    text-shadow: 0px 4px 4px rgb(0, 0, 0);
+    background: #1D10AC;
+    border-radius: 10px;
+}
+
+.encriptar:hover, .desencriptar:hover, #copiar:hover{
+    background-color: darkblue;
+    /* transform con scale hace que aumente su tamaño segun se especifique en el parentesis*/
+    transform: scale(1.2);
+    /* transform rotate hace que gire el elemento el angulo que le proporcionamos en el parentesis para que los elementos sean considerados al mismo tiempo, dichas propiedades deben estar en la misma línea*/
+    /*transform: scale(1.2) rotate(70deg);*/
+}
+
+#copiar{
+    display: inline;
+    font-size: large;
+    color: gold;
+    position: absolute;
+    width: 105px;
+    height: 33px;
+    left: 1190px;
+    top: 380px;
+    filter: drop-shadow(0px 4px 4px rgb(0, 0, 0));
+    /* transistion aparecio en CCS3 y sirve para cambiar las propiedades del item pero de una forma no abrupta, como una forma suavizada y "all" significa que cambie TODAS las propiedades*/
+    transition: 0.5s all;
+    /*Cambia el estilo del puntero*/
+    cursor: pointer;
+    text-shadow: 0px 4px 4px rgb(0, 0, 0);
+    background: #1D10AC;
+    border-radius: 10px;
+}
+
+
+.requisitos{
+    position: absolute;
+    width: 971px;
+    height: 96px;
+    left: 55px;
+    top: 873px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.credits{
+    position: relative;
+    width: 971px;
+    height: 96px;
+    left: 1200px;
+    top: 873px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
