@@ -6,7 +6,7 @@ body{
 /*+++++++++++++++++++++++++++             H E A D E R           ++++++++++++++++++++++++++++++++++*/
 
 header{
-    background-color: #BBBBBB;
+    background-color: #4d4c4c;
     /*Espaciamiento externo con padding, los bordes del encabezado*/
     padding: 20px 0;
 }
@@ -141,7 +141,7 @@ footer{
 
 .copyright{
     font-size: 13px;
-    color: #CCCCCC;
+    color: #979797;
 }
 
 
@@ -263,6 +263,9 @@ td, th{
     width: 100%;
 }
 
+#barber-logo{
+    border-radius: 50%;
+}
 /*SELECTORES AVANZADOS
 
 1.- Aplica estilo solo al hijo, en este caso "main" es el padre y el hijo es "p"

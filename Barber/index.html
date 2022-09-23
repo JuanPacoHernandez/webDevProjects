@@ -11,7 +11,7 @@
         <meta charset="UTF-8">
         <!-- Meta para hacer un diseño resposivo entre los smartphone, además usamos @media query en CSS-->
         <meta name = "viewport" content="width=device-width">
-        <title>Barbería ALURA</title>
+        <title>Barber</title>
         <link rel = "stylesheet" href = "reset.css">
         <link rel = "stylesheet" href = "style.css">
 
@@ -27,7 +27,8 @@
         <header>
             <div class="caja">
                 <h1>
-                    <img src="imagenes/logo.png">
+                    <!-- con esta combinación de TAGs de "p" y "a" se logra que la imagen contenga un link, en este caso el link es hacia home -->
+                    <p><a href="index.html"><img src="imagesBarber/barber-white-logo.png" alt = "logo de la Barbería"></a></p>
                 </h1>
             <!-- Etiqueta de Navegación, disponible a partir de HTML5-->
                 <nav>
@@ -41,18 +42,18 @@
         </header>
         
         <!-- usamos id cuando queremos configurar comportamientos y usamos clases cuando queremos configurar estilos, por eso usamos clase en la siguiente imagen-->
-        <img class = "banner" src="imagenes/banner.jpg">
+        <img class = "banner" src="imagesBarber/banner.jpg">
 
         <main>
             <!-- section es para separar elementos de forma semántica -->
             <section class = "principal">
-                <h2 class = "titulo-principal">Sobre la Barbería Alura</h3>
+                <h2 class = "titulo-principal">Sobre la Barbería</h3>
 
-                <img src = "imagenes/utensilios.jpg" class = "utensilios" alt = "Imagen de los utensilios de un barbero, una brocha y un rastrillo antiguo">
+                <img src = "imagesBarber/utensilios.jpg" class = "utensilios" alt = "Imagen de los utensilios de un barbero, una brocha y un rastrillo antiguo">
     
                 <!-- strong es para usar negrita
                     em es para cursiva-->
-                <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
+                <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería ya es destaque en la ciudad y conquista nuevos clientes diariamente.</p>
         
                 <p id = "mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p>
         
@@ -77,15 +78,13 @@
                         <li class = "items">Camaradería</li>
                         <li class = "items">Limpieza y calidad</li>
                         <li class = "items">Profesionales calificados</li>
-                    </ul>  <img class = "imgValorAgregado" src="imagenes/diferenciales.jpg">
+                    </ul>  <img class = "imgValorAgregado" src="imagesBarber/diferenciales.jpg">
                 </div>
 
                 <div class = "video">
                     <!-- 100% en width es mejor que especificar 560px porque cuando aplica el Diseño Responsivo se ajustará con auto ese 100% -->
                     <iframe width="100%" height="315" src="https://www.youtube.com/embed/LAvkhBX6laA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-    
-                
             </section>
 
                
@@ -93,9 +92,9 @@
         </main>
 
         <footer>
-            <img src = "imagenes/logo-blanco.png" alt="Logo para el footer">
+            <img src = "imagesBarber/barber-logo.png" alt="Logo para el footer">
             <!-- El signo de CopyRight se imprime con &copy, sacado de unicode (unicode-table.com)-->
-            <p class = "copyright">&copy Copyright Barbería A L U R A - 2022</p>
+            <p class = "copyright">&copy Copyright Barbería - 2022</p>
         </footer>
 
     </body>
