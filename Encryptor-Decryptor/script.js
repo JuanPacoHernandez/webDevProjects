@@ -56,8 +56,12 @@ function copiar() {
 }
 document.querySelector("#copiar").addEventListener("click", copiar);
 
-function borrar(){
+function borrar_output(){
     message.value = "";
+}
+
+function borrar_input(){
+    inputText.value = "";
 }
 
 
