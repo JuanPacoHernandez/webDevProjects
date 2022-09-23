@@ -1,0 +1,425 @@
+/* Establecemos la fuente "Montserrat" extraída de Google Fonts*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*+++++++++++++++++++++++++++             H E A D E R           ++++++++++++++++++++++++++++++++++*/
+
+header{
+    background-color: #BBBBBB;
+    /*Espaciamiento externo con padding, los bordes del encabezado*/
+    padding: 20px 0;
+}
+/*caja es la parte superior donde se encuentra el logo y el menu de navegación*/
+.caja{
+    width: 940px;
+    /*La posición es relativa para que se pueda ajustar el ancho y no sea estática*/
+    position: relative;
+    /*margen 0 para el superior e inferior y auto para los extremos izq y derecho*/
+    /*La mejor forma de alinear una div al centro es con auto*/
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Etiqueta nav de NAVEGACION junto con la etiqueta li de ITEM*/
+nav li{
+    display: inline;
+    /*Para separar entre objetos, HOME PRODUCTOS Y CONTACTO y los objetos de alrededor*/
+    /* TOP, RIGHT, BOTTOM, LEFT*/
+    margin: 0 0 0 15px;
+}
+
+/*Etiqueta nav de NAVEGACION junto con la etiqueta a de ANCHOR*/
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    /*Para quitar el subrayado de los link que aparece por default*/
+    text-decoration: none;
+}
+
+/*Para capturar el movimiento del puntero cuando pasa por los elementos del menu navegación, en 
+específico los elementos dentro de las etiquetas a ANCHOR*/
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+    transition: 0.3s all;
+}
+
+
+
+
+
+/*+++++++++++++++++++++++++++                M A I N           ++++++++++++++++++++++++++++++++++*/
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    /*Espacio entre el bloque main y el encabezado*/
+    padding: 40px;
+}
+
+.productos li{
+    text-align: center;
+    /*El tamaño puede ser ajustado, tanto en lo largo como en lo ancho*/
+    display: inline-block;
+    /*Que cada elemento ocupe el 30% del espacio, ya que son 3 elementos */
+    width: 30%;
+    vertical-align: top;
+    /*De los 940px que abarca nuestra UL list, 30% es del ancho y como son 3, es el 90% del espacio
+    disponible. Para determinar el margen, usamos 1.5% porque son seis margenes (2 por cada elemento 
+    , que son 3 elementos) entonces nos da 1.5*6 = 9% junto con los 90% de los 3 elementos, nos suma
+    el 100% del espacio disponible*/
+    margin: 0 1.5%;
+    /*Espacio de 30px en la vertical y 20px en la horizontal*/
+    padding: 30px 20px;
+    /*El borde de los items (border-box) será el limite del tamaño de la caja */
+    box-sizing: border-box;
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    /*border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;*/
+    /*Mejor usamos*/
+    border-radius: 10px 10px 10px 10px;
+}
+
+/*Para capturar el movimiento del puntero cuando pasa por los productos, en 
+específico los elementos de la lista UL*/
+.productos li:hover{
+    border-color: #c78c19;
+    transition: 0.5s all;
+}
+
+/*Para capturar el clic del mouse sobre los productos, en específico los elementos de la lista UL*/
+.productos li:active{
+    border-color: #088c19;
+}
+
+.productos h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*Para capturar el movimiento del puntero cuando pasa por los productos, en 
+específico los elementos de la lista UL pero que sus efectos lleguen hasta h2*/
+.productos li:hover h2{
+    font-size: 40px;
+    transition: 0.5s all;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+
+/*+++++++++++++++++++++++++++             F O O T E R           ++++++++++++++++++++++++++++++++++*/
+footer{
+    text-align: center;
+    /*Para insertar una imagen mediante CSS*/
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright{
+    font-size: 13px;
+    color: #CCCCCC;
+}
+
+
+
+/*************************************************************************************************/
+
+
+form{
+    /*Espaciado de 40 en los extremos superior e inferior y cero para los extremos izquuierdo y derecho*/
+    margin: 40px 80px;
+}
+
+/*
+
+Formato general para fullname, email phone y submit
+
+form label {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+form input, form textarea {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+*/
+#message{
+    display: block;
+    margin: 0 0 20px;
+}
+
+#fullname{
+    display: block;
+    margin: 0 0 20px;
+    padding: 5px 120px;
+}
+
+#email{
+    display: block;
+    margin: 0 0 20px;
+    padding: 5px 50px;
+}
+
+#phone{
+    display: block;
+    margin: 0 0 20px;
+    padding: 5px 40px;
+}
+
+#check{
+    /*0 top, 0 right, 20px bottom*/
+    margin: 0 0 0 20px;
+}
+
+legend{
+    font-size: 20px;
+}
+
+.radioOption{
+    display: block;
+    margin: 0 0 10px;
+    font-size: 20px;
+  }
+  
+.radioOption input{
+    display: inline-block;
+    margin: 0 0 20px 10px;
+    padding: 10px 25px;
+}
+
+.enviar{
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    /*0 top, 0 right, 20px bottom*/
+    margin: 40px 0 20px;
+    padding: 20px 40px;
+    width: 30%;
+    /* transistion aparecio en CCS3 y sirve para cambiar las propiedades del item pero de una forma no abrupta, como una forma suavizada y "all" significa que cambie TODAS las propiedades*/
+    transition: 0.5s all;
+    /*Cambia el estilo del puntero*/
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: darkorange;
+    /* transform con scale hace que aumente su tamaño segun se especifique en el parentesis*/
+    transform: scale(1.2);
+    /* transform rotate hace que gire el elemento el angulo que le proporcionamos en el parentesis para que los elementos sean considerados al mismo tiempo, dichas propiedades deben estar en la misma línea*/
+    /*transform: scale(1.2) rotate(70deg);*/
+}
+
+/* Formato a la tabla*/
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+
+/******************************              CCS para HOME                **************************/
+.banner{
+    width: 100%;
+}
+
+/*SELECTORES AVANZADOS
+
+1.- Aplica estilo solo al hijo, en este caso "main" es el padre y el hijo es "p"
+
+main > p{
+    background:red;
+}
+
+2.- Aplica estilo al hermano (elemento en el mismo nivel)
+img + p{
+    background: yellow;
+}
+
+3.- Aplica el estilo solo a los elementos después de el elemento especificado, en este caso aplica estilo a los elementos "p" después de la imagen "img"
+img ~ p{
+    backgrounf: green;
+
+4.- Aplica estilo a todo los elementos excepto el especificado, en este caso aplica estilo a todos los elementos "p" excepto el que tiene el id = mision
+.principal p:not(#mision){
+    background: orange;
+}
+
+*/
+
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    /* em es el tamaño patron del navegador, por default*/
+    font-size: 2em;
+    margin: 20px 0 1em;
+    /* clear es para establecer que el efecto "float" en la clase .utensilios solo afecta a la imagen utensilios ya que el titulo es el más próximo a esta imagen*/
+    clear: left;
+}
+
+
+
+/*
+/*Pseudo Elemento para poner en cursiva la primera línea
+p:first-line{
+    font-style: italic;
+}
+*/
+
+/*Psedudo Elementos para poner corchetes en el titulo, antes */
+.titulo-principal:before{
+    content: "[";
+}
+/*Psedudo Elementos para poner corchetes en el titulo, después*/
+.titulo-principal:after{
+    content: "]";
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+    font-style: oblique;
+}
+
+/*Imagen de utensilios*/
+.utensilios{
+    /*Podemos establecer el tamaño de una imagen directamente o haciendo uso de calculos, como el siguiente:
+    width: calc(25% - (120px));*/
+    width: 120px;
+    margin: 0 10px 5px 0;
+    /* En la clase .titulo-principal se establece con el comando "clear" que float solo afecta a utensilios, y dejando deshabilitado este efecto para el titulo-principal*/
+    /* float es para hacer que el texto rodee a la imagen */
+    float: left;
+}
+
+.mapa{
+    padding: 3em 0;
+    /*Agregar degradaddo en background*/
+    background: linear-gradient(#FEFEFE,#888888);
+}
+
+/* Para aplicar estilo al puro mapa*/
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*Sección Valor Agregado*/
+.valor-agregado{
+    padding: 3em 0;
+    background: linear-gradient(#888888,#FEFEFE);
+}
+
+.contenido-valor-agregado{
+    width: 940px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.lista-valor-agregado{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.items{
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+/*Agrega un emoji de UNICODE antes de cada elemento ITEM*/
+.items:before{
+    content: "💈";
+    font-size: 25px;
+}
+
+/*
+/* first child, second child y nth child son pseudo clases para poder aplicar estilos en elementos que son contiguos en las clases
+.items:first-child{
+    font-weight: bold;
+}
+*/
+.imgValorAgregado{
+    width: 45%;
+    /*Aplicación de Sombra a la imagen, los argumentos son derecha, arriba, degradado, spread y color*/
+    box-shadow: 10px 10px 30px 15px #000000;
+    /*Para agregar otra sombra al unisono:
+    box-shadow: 10px 10px 30px 15px #000000, -10px -10px yellow;*/
+}
+
+/*Cualidad de Opacidad, dejar pasar la luz, la opacidad también se define con rgb(0,0,0,0.5) el último elemento del rgb() es la opacidad*/
+.imgValorAgregado:hover{
+    opacity: 50%;
+    transition: 0.5s all;
+}
+
+.video{
+    width: 560px;
+    margin: 8em auto;
+}
+
+/*Configuración para un DISEÑO RESPONSIVO*/
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-valor-agregado, .video{
+        width: auto;
+    }
+    .lista-valor-agregado, .imgValorAgregado{
+        width: 100%;
+    }
+}

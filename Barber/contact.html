@@ -1,0 +1,136 @@
+<!-- VERSION 5 DE HTML, SE DECLARA CON DOCTYPE html-->
+<!DOCTYPE html>
+
+<!-- PARA ENCONTRAR DIFERENTES TIPOS DE INPUTS PARA SER USADOS EN CELULARES PUEDES ENTRAR A: 
+    
+    mobileinputtypes.com-->
+
+
+<!-- Definimos el lenguaje: es-->
+<html lang = es>
+
+    <head>
+        
+        <!-- Es aconsejable especificar el codigo del texto con el siguiente diccionario:-->
+        <meta charset="UTF-8">
+        <title>Contacto - Barbería ALURA</title>
+        <!--Para modificar estilo que aplica por defecto el navegador, usamos reset.css (meyerweb.com)-->
+        <link rel = "stylesheet" href = "reset.css">
+        <link rel = "stylesheet" href = "style.css">
+        <!-- Estas tres lineas definen el tipo de letra "Montserrat" extraída de Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+        
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1>
+                    <!-- alt es una descripcion de la imagen, es una buena practica-->
+                    <img src="imagenes/logo.png" alt = "logo de la Barbería ALURA">
+                </h1>
+            <!-- Etiqueta de Navegación, disponible a partir de HTML5-->
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="btn btn-primary">h o m e</a></li>
+                        <li><a href="products.html" class="btn btn-primary">productos</a></li>
+                        <li><a href="contact.html" class="btn btn-primary">contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Etiqueta para hacer formularios -->
+            <form>
+                <!-- for es para hacer referencia al input con el mismo id, en este caso "nombrecompleto" de esta manera cuando hacemos clic en el "label", elpuntero de escritura se activa para el espacio donde el usuario ingresará sus datos-->
+                <label for = "fullname">Nombre completo</label>
+                <input type = "text" id="fullname" required>
+
+                <label for = "email">Correo electrónico</label>
+                <!-- Required es para especificar que es obligatorio el campo
+                y placeholder es un ejemplo del formato de dato que se espera-->
+                <input type = "email" id="email" required placeholder="email@dominio.com">
+
+                <label for = "phone">Teléfono</label>
+                <input type = "tel" id="phone" required placeholder="XX-XX-XX-XX-XX">
+                
+                <label for = "message">Mensaje</label>
+                <textarea cols = "80" rows = "10" id = "message"></textarea>
+
+                <!-- FIELDSET agrupa items que pertenecen al mismo grupo, misma información, que de alguna forma están relacionados-->
+                <fieldset>
+                    <!-- legend es similar al p solo que legend es el estandár para cuando usamos fieldset-->
+                    <legend>¿Cómo te gustaría que te contactemos?<br><br><br></legend>
+
+                    <label class="radioOption">
+                        <!-- name "contacto" igual en los tres radio hace que solo se pueda seleccionar una opcion, ya que son el mismo name-->
+                        <input type="radio" name = "contacto">      Email
+                    </label>
+
+                    <label class="radioOption">
+                        <!-- input dentro de label pemite omitir el id -->
+                        <input type="radio" name = "contacto">      Telefono
+                    </label>
+                    
+                    <label class="radioOption">
+                        <input type="radio" name = "contacto" checked>      Whatsapp
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <!-- Lista desplegable -->
+                    <legend>¿En que horario prefieres ser atendido?</legend>
+                    <br>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                <fieldset>
+
+                <br><br><br>
+                <!-- checked es para seleccionar por default, si el usuario desea lo puede uncheck -->
+                <label><input type = "checkbox" id = "check" checked>   Me gustaría recibir novedades de Barbería Alura</label>
+
+               <input type = "submit" value = "Enviar formulario", id = "submit" class ="enviar">
+
+               <!-- Definición de una tabla-->
+               <table>
+                    <!-- Header de la tabla, lo que hace es centrar los encabezados sobre las celdas de abajo -->
+                    <thead>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </thead>
+                        <!-- Definición de un renglon-->
+                    <tbody>
+                        <tr>
+                            <!-- Definición de una celda-->
+                            <td>Lunes a viernes</td>
+                            <td>8:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>9:00 - 19:00</td>
+                        </tr>
+                        <tr>
+                            <td>Domingo</td>
+                            <td>11:00 - 18:00</td>
+                        </tr>
+                    </tbody>
+               </table>
+
+            </form>
+        </main>
+
+        <footer>
+            <img src = "imagenes/logo-blanco.png" alt="Logo para el footer">
+            <!-- El signo de CopyRight se imprime con &copy, sacado de unicode (unicode-table.com)-->
+            <p class = "copyright">&copy Copyright Barbería A L U R A - 2022</p>
+        </footer>
+
+
+    </body>
+
+</html>
