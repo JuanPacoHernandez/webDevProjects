@@ -105,7 +105,7 @@ body{
     position: absolute;
     width: 105px;
     height: 33px;
-    left: 1190px;
+    left: 1050px;
     top: 380px;
     filter: drop-shadow(0px 4px 4px rgb(0, 0, 0));
     /* transistion aparecio en CCS3 y sirve para cambiar las propiedades del item pero de una forma no abrupta, como una forma suavizada y "all" significa que cambie TODAS las propiedades*/
@@ -117,6 +117,25 @@ body{
     border-radius: 10px;
 }
 
+
+#borrar{
+    display: inline;
+    font-size: large;
+    color: gold;
+    position: absolute;
+    width: 105px;
+    height: 33px;
+    left: 1190px;
+    top: 380px;
+    filter: drop-shadow(0px 4px 4px rgb(0, 0, 0));
+    /* transistion aparecio en CCS3 y sirve para cambiar las propiedades del item pero de una forma no abrupta, como una forma suavizada y "all" significa que cambie TODAS las propiedades*/
+    transition: 0.5s all;
+    /*Cambia el estilo del puntero*/
+    cursor: pointer;
+    text-shadow: 0px 4px 4px rgb(0, 0, 0);
+    background: red;
+    border-radius: 10px;
+}
 
 .requisitos{
     position: absolute;
