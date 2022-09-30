@@ -11,22 +11,22 @@ Meanwhile you are playing, you can Desist or play a New game.
 
 ## Buttons
 
-###### index.html
+**index.html**
 
-**Start Game** - Play directly with previous stored words.
+###### Start Game - Play directly with previous stored words.
 
-**Add new word** - To input a new word from the user to the stored words.
+###### Add new word - To input a new word from the user to the stored words.
 
 
-###### inputWord.html
+**inputWord.html**
 
-**Erase** - To remove word in one click.
+###### Erase - To remove word in one click.
 
-**Save word** - To store new word with the already stored words, you can store as many words as you want.
+###### Save word - To store new word with the already stored words, you can store as many words as you want.
 
-**Start game** - Play directly, including the new word, if is the case.
+###### Start game - Play directly, including the new word, if is the case.
 
-**Cancel** - Abort adding new word, redirects to main page.
+###### Cancel - Abort adding new word, redirects to main page.
 
 
 ## Files
