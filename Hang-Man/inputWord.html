@@ -20,29 +20,37 @@
     </header>
     <main>
         <section>
-            <div id="disappear" class="home-buttons">
+            <div class="input">
+                <!-- ERASE INPUT BUTTON  -->
+                <input type="submit" class="btn-erase-input" id="erase-input" value="Erase the word" onclick="erase_input()"/>
+
+                <!-- INPUT NEW WORD -->
+                <input type="text" onkeydown="preventNumberInput(event)" onkeyup="preventNumberInput(event)" id="input-text" cols="60" rows="10" placeholder="Enter new word"/>
+
+                <!-- SAVE NEW WORD BUTTON -->
+                <input type="submit" class="btn-saveWord" id="save-word" value="Save word" onclick="addNewWord();savedWordAlert();">
+
                 <!-- START GAME BUTTON -->
                 <a href="#canvas">
                     <!-- también se puede usar la etiqueta button, en lugar de input -->
-                    <input class="btn-startGame" type="submit" value="Start Game" id="start-game" onclick="startGame()"/>
-                </a>
-                <!-- ADD NEW WORD LINK TO PAGE BUTTON -->
-                <a href="inputWord.html">
-                    <input class="btn-addNewWord" type="submit" value="Add New Word" id="add-new-word"/>
-                </a> 
+                    <input class="btn-startGameInput" type="submit" value="Start Game" id="start-game-input" onclick="startGameInput()"></a>
+
+                <!-- CANCEL BUTTON, RETURN TO INDEX  -->
+                <a href="index.html"><input type="submit" value="Cancel" class="btn-cancel" id="cancel"/></a>
 
                 <!-- NEW GAME BUTTON -->
-                <input class="btn-newGame" type="submit" value="New Game" id="new-game" onclick="startGame()" style="display: none"/>
+                <input class="btn-newGame" type="submit" value="New Game" id="new-game-input" onclick="startGameInput()" style="display: none"/>
 
                 <!-- DESIST BUTTON -->
                 <a href="index.html">
-                    <input class="btn-desist" type="submit" value="Desist" id="desist" style="display: none"/>
-                </a> 
+                    <input class="btn-desist" type="submit" value="Desist" id="desist-input" style="display: none"/>
+                </a>             
             </div>
             <div id="appear" class="canvas">
-                <!-- Canvas -->
+                <!-- Canvas -->    
                 <canvas id="canvas" width="1140" height="368">
-                </canvas>
+                </canvas> 
+            </div>
             </div>
         </section>
     </main>
