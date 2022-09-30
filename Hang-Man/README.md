@@ -11,14 +11,14 @@ Meanwhile you are playing, you can Desist or play a New game.
 
 ## Buttons
 
-###index.html
+######index.html
 
 **Start Game** - Play directly with previous stored words.
 
 **Add new word** - To input a new word from the user to the stored words.
 
 
-###inputWord.html
+######inputWord.html
 
 **Erase** - To remove word in one click.
 
