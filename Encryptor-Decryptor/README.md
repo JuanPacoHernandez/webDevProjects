@@ -5,9 +5,13 @@ This project is about a text encryptor/decryptor, single webpage.
 ## Encryption keys
 
 Letter "e" turns into "enter"
+
 Letter "i" turns into "imes"
+
 Letter "a" turns into "ai"
+
 Letter "o" turns into "ober"
+
 Letter "u" turns into "ufat"
 
 ## Description
