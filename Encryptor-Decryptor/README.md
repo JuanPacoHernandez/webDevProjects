@@ -1,6 +1,6 @@
-# Project Web: Encryptor
+# Project Web: Encryptor/Decryptor
 
-This project s about a text encryptor/decryptor, single webpage.
+This project is about a text encryptor/decryptor, single webpage.
 
 ## Encryption keys
 
@@ -18,8 +18,11 @@ When clicking the Encrypt button, the encryption process starts up, and when Dec
 ## Files
 
 **index.html** (HTML)
+
 **style.css** (CSS3 Stylesheet)
+
 **reset.css** (Custom Stylesheet)
+
 **script.js** (JavaScript file)
 
 ## Observations
