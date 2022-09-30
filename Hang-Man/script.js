@@ -102,7 +102,7 @@ function startGame(){
                 // console.log("bag Errors", bagOfErrors);
                 // console.log("errors left: ",errors);
                 if (errors == 0){
-                    alert("Game Over :(");
+                    alert("Game Over, the secret word was " + secretWord);
                     return
                 }
             }
